@@ -1,0 +1,24 @@
+package:
+  name: pyrosetta-binder
+
+source:
+  patches:
+    - build.patch
+
+requirements:
+  build:
+    - python
+    - cmake
+    - ninja
+
+    - libgcc-ng     # [linux]
+    - libstdcxx-ng  # [linux]
+    - zlib
+
+  run:
+    - libgcc-ng     # [linux]
+    - libstdcxx-ng  # [linux]
+    - zlib
+
+about:
+  home: http://rosettacommons.org

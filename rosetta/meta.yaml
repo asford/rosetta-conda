@@ -1,0 +1,22 @@
+package:
+  name: rosetta
+
+requirements:
+  build:
+    - python
+    #- toolchain
+    #- ccache-toolchain
+    - cmake
+    - ninja
+
+    - libgcc-ng     # [linux]
+    - libstdcxx-ng  # [linux]
+    - zlib
+
+  run:
+    - libgcc-ng     # [linux]
+    - libstdcxx-ng  # [linux]
+    - zlib
+
+about:
+  home: http://rosettacommons.org

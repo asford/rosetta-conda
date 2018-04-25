@@ -1,0 +1,33 @@
+package:
+  name: pyrosetta
+
+requirements:
+  build:
+    - python
+    #- toolchain
+    #- ccache-toolchain
+    - cmake
+    - ninja
+
+
+    - libgcc-ng     # [linux]
+    - libstdcxx-ng  # [linux]
+    - zlib
+
+    - numpy 1.13.*
+
+  run:
+    - python
+
+    - libgcc-ng     # [linux]
+    - libstdcxx-ng  # [linux]
+    - zlib
+
+    - numpy >=1.13
+    - pandas >=0.18
+    - scipy >=1.0
+    - traitlets
+    - python-blosc
+
+about:
+  home: http://rosettacommons.org
